@@ -1,0 +1,17 @@
+@use '../assets' as a;
+
+.blog {
+	background-color: white;
+
+	.blog-posts {
+		width: 100%;
+	}
+
+	@media only screen and (min-width: 768px) {
+		.blog-posts {
+			display: flex;
+
+			justify-content: space-around;
+		}
+	}
+}

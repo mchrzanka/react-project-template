@@ -1,0 +1,12 @@
+@use '../assets/' as a;
+
+.post-view {
+	background-color: a.$grey;
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+}

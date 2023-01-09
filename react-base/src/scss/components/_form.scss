@@ -1,0 +1,18 @@
+@use '../assets' as a;
+
+.contact-form {
+	background-color: a.$grey;
+	text-align: left;
+
+	div:not(.errors) {
+		display: flex;
+		flex-direction: column;
+		max-width: 60rem;
+		margin: 0 auto;
+		padding: 1rem 0;
+
+		div.errors {
+			color: rgb(218, 10, 10);
+		}
+	}
+}

@@ -1,0 +1,105 @@
+@use '../assets' as a;
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// font-family: a.$Poppins;
+	font-size: 1.8rem;
+	margin: 0 auto;
+	background-color: a.$grey;
+
+	.logo img {
+		height: 8rem;
+	}
+
+	.is-active {
+		top: 0;
+		right: 0;
+		transition-duration: 0.4s;
+	}
+
+	.hamburger {
+		cursor: pointer;
+		appearance: none;
+		outline: none;
+		z-index: 100;
+		padding: 2rem;
+	}
+
+	.hamburger span {
+		display: block;
+		width: 3rem;
+		height: 0.4rem;
+		margin-bottom: 0.5rem;
+		position: relative;
+		border-radius: 0.6rem;
+		transform-origin: 0 0;
+		transition: 0.4s;
+		background-color: a.$almost-black;
+	}
+
+	.hamburger.is-active span:nth-child(1) {
+		transform: translate(0rem, -0.2rem) rotate(45deg);
+	}
+
+	.hamburger.is-active span:nth-child(2) {
+		opacity: 0;
+		transform: translate(1.5rem);
+	}
+
+	.hamburger.is-active span:nth-child(3) {
+		transform: translate(-0.3rem, 0.2rem) rotate(-45deg);
+	}
+
+	.nav-menu {
+		position: fixed;
+		display: block;
+		top: -150%;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+		padding-top: 6rem;
+		transition: 1s;
+		background-color: a.$pink;
+	}
+
+	.nav-item a {
+		padding: 3rem;
+		display: block;
+	}
+
+	.nav-item a:hover {
+	}
+
+	.active {
+		top: 0;
+	}
+
+	// Desktop Navigation Changes
+	@media only screen and (min-width: 768px) {
+		.nav-menu {
+			position: relative;
+			padding-top: 0;
+			display: flex;
+			background: none;
+			transition: 0s;
+		}
+
+		.hamburger {
+			display: none;
+			padding: 0;
+		}
+
+		.hamburger span {
+			display: none;
+		}
+	}
+
+	@media only screen and (min-width: 2000px) {
+		.nav-item a {
+			padding: 4rem;
+			font-size: 1.8rem;
+		}
+	}
+}

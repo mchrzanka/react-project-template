@@ -1,0 +1,5 @@
+@use '../assets/' as a;
+
+.cards {
+	background-color: a.$light-blue;
+}

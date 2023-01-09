@@ -1,0 +1,24 @@
+@use '../assets' as a;
+
+.socials {
+	display: flex;
+	margin-left: 1.6rem;
+	width: 12rem;
+	justify-content: space-between;
+
+	a {
+		z-index: 100;
+		color: a.$light-blue;
+	}
+}
+
+@media only screen and (min-width: 2000px) {
+	.socials {
+		width: 20rem;
+
+		svg {
+			height: 5rem;
+			width: 5rem;
+		}
+	}
+}

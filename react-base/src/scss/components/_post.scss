@@ -1,0 +1,20 @@
+@use '../assets' as a;
+
+.post {
+	background-color: a.$grey;
+	padding-bottom: 4rem;
+
+	.post-img {
+		img {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		height: 20rem;
+
+		.post-img img {
+			width: 20rem;
+		}
+	}
+}

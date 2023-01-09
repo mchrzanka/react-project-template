@@ -1,0 +1,18 @@
+@use './assets/base';
+@use './assets/colors';
+@use './assets/fonts';
+@use './assets/reset';
+
+@use './components/button';
+@use './components/card';
+@use './components/footer';
+@use './components/form';
+@use './components/navbar';
+@use './components/post';
+@use './components/postView';
+@use './components/socials';
+
+@use './pages/about';
+@use './pages/blog';
+@use './pages/contact';
+@use './pages/home';

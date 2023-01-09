@@ -1,0 +1,40 @@
+@use '../assets' as a;
+
+footer {
+	background-color: a.$grey;
+
+	.main-footer {
+		.footer-two {
+			.logo img {
+				height: 6rem;
+			}
+		}
+	}
+
+	.secondary-footer {
+		width: 100%;
+	}
+
+	@media only screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+
+		.main-footer {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			.footer-one {
+				text-align: left;
+			}
+
+			.footer-three {
+				text-align: right;
+			}
+		}
+
+		.secondary-footer {
+			width: 100%;
+		}
+	}
+}
