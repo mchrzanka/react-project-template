@@ -1,7 +1,7 @@
 @use '../assets' as a;
 
 .navbar {
-	background-color: pink;
+	background-color: a.$grey;
 
 	&-container {
 		display: flex;

@@ -2,16 +2,22 @@
 	{
 		"id": 1,
 		"title": "Title for example one",
-		"desc": "description for example one"
+		"desc": "description for example one",
+		"img": "placeholder.jpg",
+		"url": "example-one"
 	},
 	{
 		"id": 2,
 		"title": "Title for example two",
-		"desc": "description for example two"
+		"desc": "description for example two",
+		"img": "placeholder.jpg",
+		"url": "example-two"
 	},
 	{
 		"id": 3,
 		"title": "Title for example three",
-		"desc": "description for example three"
+		"desc": "description for example three",
+		"img": "placeholder.jpg",
+		"url": "example-three"
 	}
 ]

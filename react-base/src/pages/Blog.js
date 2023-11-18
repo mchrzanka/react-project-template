@@ -8,6 +8,9 @@ import '../scss/pages/_blog.scss';
 //imgs
 import Placeholder from '../assets/imgs/placeholder.jpg';
 
+//data
+import data from '../data/data.json';
+
 function Blog() {
 	return (
 		<div className='blog'>
@@ -16,27 +19,16 @@ function Blog() {
 			</div>
 
 			<div className='blog-posts'>
-				<Post
-					url='post1'
-					title='Post 1'
-					summary='Small readmore-type blurb'
-					src={Placeholder}
-					alt='Placeholder for images'
-				/>
-				<Post
-					url='post2'
-					title='Post 2'
-					summary='Small readmore-type blurb'
-					src={Placeholder}
-					alt='Placeholder for images'
-				/>
-				<Post
-					url='post3'
-					title='Post 3'
-					summary='Small readmore-type blurb'
-					src={Placeholder}
-					alt='Placeholder for images'
-				/>
+				{data.map((post) => (
+					<Post
+						key={post.id}
+						id={post.id}
+						title={post.title}
+						desc={post.desc}
+						img={post.img}
+						url={post.url}
+					/>
+				))}
 			</div>
 		</div>
 	);

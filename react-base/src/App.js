@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import Blog from './pages/Blog';
-import PostView from './components/PostView';
+import PostView from './pages/PostView';
 import Contact from './pages/Contact';
 import About from './pages/About';
 

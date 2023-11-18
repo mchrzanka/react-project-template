@@ -3,24 +3,16 @@ import { BsArrowRight } from 'react-icons/bs';
 
 import '../scss/components/_post.scss';
 
-const Post = (props) => {
-	return (
-		<div className={`post`}>
-			<div className='post-img'>
-				<img src={props.src} alt={props.alt} />
-			</div>
-			<h1 className='post-title'>{props.title}</h1>
-			<p className='post-summary'>{props.summary}</p>
-
-			<a
-				href={`blog/${props.url}`}
-				className='btn'
-				aria-label='View Post Button'
-			>
-				View Post <BsArrowRight />
-			</a>
-		</div>
-	);
-};
+const Post = ({ id, title, desc, img, url }) => (
+	<a href={`blog/${url}`} key={id} className='post'>
+		<img
+			src={require(`../assets/imgs/${img}`)} //webpack specific to make sure images are being included correctly in bundling
+			alt={`website design and development for ${title}`}
+		/>
+		<h2>{title}</h2>
+		<p>{desc}</p>
+		{/* Other post content */}
+	</a>
+);
 
 export default Post;
