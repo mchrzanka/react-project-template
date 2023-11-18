@@ -26,10 +26,16 @@ footer {
 
 			.footer-one {
 				text-align: left;
+				flex: 1;
+			}
+
+			.footer-two {
+				flex: 1;
 			}
 
 			.footer-three {
 				text-align: right;
+				flex: 1;
 			}
 		}
 

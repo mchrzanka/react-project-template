@@ -15,7 +15,7 @@ function Navbar(props) {
 	return (
 		<>
 			<nav className='navbar' role='navigation'>
-				<div className='navbar-container'>
+				<div className='container'>
 					<div className='logo'>
 						<a href='/'>
 							<img src={Logo} alt='Placeholder logo image'></img>

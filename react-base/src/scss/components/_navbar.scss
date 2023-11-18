@@ -3,14 +3,12 @@
 .navbar {
 	background-color: a.$grey;
 
-	&-container {
+	.container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		//font-family: a.$Grotesk;
 		font-size: 1.8rem;
-		max-width: 140rem;
-		margin: 0 auto;
 		padding: 1rem 1.6rem 0.5rem;
 
 		@media only screen and (min-width: 1400px) {

@@ -7,4 +7,15 @@ html {
 	/* 10/16 = 0.625 * 100 = 62.5%, so we're working in a base of 10 for font size.*/
 
 	scroll-behavior: smooth;
+	user-select: none;
+}
+
+.container {
+	max-width: 140rem;
+	margin: 0 auto;
+	padding: 0 1.6rem;
+
+	@media only screen and (min-width: 1400px) {
+		padding: 0;
+	}
 }
