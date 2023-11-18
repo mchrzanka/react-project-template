@@ -1,5 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import PostView from './components/PostView';
@@ -11,6 +15,7 @@ function App() {
 		<Router>
 			<div className='App'>
 				<>
+					<Navbar />
 					<Routes>
 						<Route path='/' element={<Home />}></Route>
 						<Route path='/blog' element={<Blog />}></Route>
@@ -18,6 +23,7 @@ function App() {
 						<Route path='/contact' element={<Contact />}></Route>
 						<Route path='/about' element={<About />}></Route>
 					</Routes>
+					<Footer />
 				</>
 			</div>
 		</Router>
