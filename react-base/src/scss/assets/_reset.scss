@@ -7,6 +7,21 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
+/*
+ Remove default margin
+  */
+* {
+	margin: 0;
+}
+/*
+ Allow percentage-based heights in the application
+  */
+html,
+body {
+	height: 100%;
+}
+/*
+
 html,
 body,
 div,
@@ -271,4 +286,20 @@ textarea {
 
 html {
 	box-sizing: border-box;
+}
+
+//fixes the autofill form changes that the browser does
+input:-webkit-autofill {
+	-webkit-text-fill-color: inherit !important;
+	transition: background-color 0s 600000s, color 0s 600000s !important;
+}
+
+input:-webkit-autofill:focus {
+	-webkit-text-fill-color: inherit !important;
+	transition: background-color 0s 600000s, color 0s 600000s !important;
+}
+
+input:-internal-autofill-selected {
+	-webkit-text-fill-color: inherit !important;
+	transition: background-color 0s 600000s, color 0s 600000s !important;
 }
