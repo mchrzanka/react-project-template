@@ -14,7 +14,6 @@ const ChatBot = () => {
 				messageParser={MessageParser}
 				actionProvider={ActionProvider}
 			/>
-			;
 		</div>
 	);
 };

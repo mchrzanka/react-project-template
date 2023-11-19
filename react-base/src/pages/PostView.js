@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom'; //returns an object containing key value pairs from the current URL parameters. Each key corresponds to a parameter defined in your route (in this case, /portfolio/:projectName)
+import { useParams } from 'react-router-dom'; //returns an object containing key value pairs from the current URL parameters. Each key corresponds to a parameter defined in your route (in this case, /portfolio/:projectName)
 
 //styles
 import '../scss/components/_postView.scss';

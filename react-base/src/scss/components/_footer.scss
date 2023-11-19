@@ -9,6 +9,10 @@ footer {
 				height: 6rem;
 			}
 		}
+
+		.footer-three ul {
+			padding: 0;
+		}
 	}
 
 	.secondary-footer {
@@ -24,17 +28,23 @@ footer {
 			display: flex;
 			justify-content: space-between;
 
-			.footer-one {
+			.footer-one,
+			.footer-two,
+			.footer-three {
 				text-align: left;
 				flex: 1;
 			}
 
 			.footer-two {
 				flex: 1;
+				display: flex;
+				justify-content: center;
 			}
 
 			.footer-three {
-				text-align: right;
+				display: flex;
+				justify-content: flex-end;
+				text-align: left;
 				flex: 1;
 			}
 		}

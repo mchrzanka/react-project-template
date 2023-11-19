@@ -21,6 +21,9 @@ const config = {
 		// Replaces the default bot avatar with the component I made
 		botAvatar: (props) => <BotAvatar {...props} />,
 	},
+	// state: {
+	// 	movieTitles: ['LOTR', 'Harry Potter'],
+	// },
 };
 
 export default config;

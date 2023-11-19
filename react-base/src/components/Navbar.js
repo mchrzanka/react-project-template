@@ -18,7 +18,7 @@ function Navbar(props) {
 				<div className='container'>
 					<div className='logo'>
 						<a href='/'>
-							<img src={Logo} alt='Placeholder logo image'></img>
+							<img src={Logo} alt='Placeholder logo'></img>
 						</a>
 					</div>
 					<div>

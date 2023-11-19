@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsArrowRight } from 'react-icons/bs';
+//import { BsArrowRight } from 'react-icons/bs';
 
 import '../scss/components/_post.scss';
 

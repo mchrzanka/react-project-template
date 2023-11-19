@@ -5,9 +5,6 @@ import Post from '../components/Post';
 //styling
 import '../scss/pages/_blog.scss';
 
-//imgs
-import Placeholder from '../assets/imgs/placeholder.jpg';
-
 //data
 import data from '../data/data.json';
 
