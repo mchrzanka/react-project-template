@@ -3,8 +3,10 @@
 @use './assets/fonts';
 @use './assets/reset';
 
+@use './components/botAvatar';
 @use './components/button';
 @use './components/card';
+@use './components/chatbot';
 @use './components/footer';
 @use './components/form';
 @use './components/navbar';
