@@ -1,4 +1,4 @@
-// MessageParser starter code
+// MessageParser starter code. Define responses in the actionProvider, and use messageParser to decide which message to activate.
 class MessageParser {
 	//a constructor is a special method that gets called when an object is created from a class. It is responsible for initializing the properties of the object, setting up any necessary state, and performing other setup tasks.
 
@@ -20,7 +20,7 @@ class MessageParser {
 		const lowercase = message.toLowerCase();
 
 		if (lowercase.includes('hello world')) {
-			this.actionProvider.helloWorldHandlder();
+			this.actionProvider.helloWorldHandler();
 		}
 	}
 }

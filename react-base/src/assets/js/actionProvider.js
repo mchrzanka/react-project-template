@@ -1,4 +1,4 @@
-// ActionProvider starter code
+// ActionProvider starter code. Define responses in the actionProvider, and use messageParser to decide which message to activate.
 class ActionProvider {
 	constructor(
 		createChatBotMessage,
