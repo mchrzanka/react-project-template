@@ -11,6 +11,12 @@ class MessageParser {
 		//assigns the values of the parameters passed to the constructor to the properties of the MessageParser instance. MessageParser now has access to the parameters, and it can call methods or access properties of this object throughout its methods.
 		this.actionProvider = actionProvider;
 		this.state = state;
+
+		//makes the message handling more dynamic
+		this.messageHandlers = {
+			'hello world': 'helloWorldHandler',
+			// Add more mappings as needed
+		};
 	}
 
 	//user input
@@ -19,8 +25,13 @@ class MessageParser {
 		//console.log(this.state);
 		const lowercase = message.toLowerCase();
 
-		if (lowercase.includes('hello world')) {
-			this.actionProvider.helloWorldHandler();
+		//checks the user input against the messageHandler to see if it matches any of the keys, and then pairs it with the value which is passed to the action Provider.
+		for (const keyword in this.messageHandlers) {
+			if (lowercase.includes(keyword)) {
+				const handler = this.messageHandlers[keyword];
+				this.actionProvider[handler]();
+				break;
+			}
 		}
 	}
 }
